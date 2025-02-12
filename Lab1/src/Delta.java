@@ -10,7 +10,7 @@ public class Delta {
 		int c=sc.nextInt();
 		int delta = b * b - 4 * a * c;
         System.out.println("Delta của phương trình là: " + delta);
-        //Kiem tra và tính căn delta nếu có thể
+        //Kiểm tra và tính căn delta nếu có thể
         if (delta >= 0) {
             double sqrtDelta = Math.sqrt(delta);
             System.out.println("Căn Delta là: " + sqrtDelta);
