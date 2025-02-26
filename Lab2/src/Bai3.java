@@ -21,7 +21,7 @@ public class Bai3 {
 		System.out.print("Vui lòng nhập vào số điện đã sử dụng: ");
 		double sDien=sc.nextDouble();
 		double tien=0;
-		if (sDien<50) {
+		if (sDien<=50) {
 			tien=sDien*1000;
 		}else {
 			tien=50*1000+(sDien-50)*1200;
