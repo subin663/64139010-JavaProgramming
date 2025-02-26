@@ -5,16 +5,15 @@ public class SanPham {
 	String tenSP;
 	String loaiSP;
 	String anhSP;
-	//Hàm tạo
-	
 	public SanPham() {
 		super();
 	}
-	public SanPham(int _maSP, String _tenSP, String _loaiSP, String _anhSP) {
-		this.maSP= _maSP;
-		this.tenSP= _tenSP;
-		this.loaiSP= _loaiSP;
-		this.anhSP= _anhSP;
+	public SanPham(int maSP, String tenSP, String loaiSP, String anhSP) {
+		super();
+		this.maSP = maSP;
+		this.tenSP = tenSP;
+		this.loaiSP = loaiSP;
+		this.anhSP = anhSP;
 	}
 	public int getMaSP() {
 		return maSP;
@@ -40,11 +39,10 @@ public class SanPham {
 	public void setAnhSP(String anhSP) {
 		this.anhSP = anhSP;
 	}
-	
 	@Override
 	public String toString() {
-	    return "MaSP=" + maSP + ", TenSP=" + tenSP + ", LoaiSP=" + loaiSP + ", AnhSP=" + anhSP + "";
+		return "maSP=" + maSP + ", tenSP=" + tenSP + ", loaiSP=" + loaiSP + ", anhSP=" + anhSP ;
 	}
-
+	
 	
 }
