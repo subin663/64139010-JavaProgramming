@@ -25,6 +25,10 @@ public class Bai3 {
         NhapMang(arr,n,sc);
         XuatMang(arr,n,sc);
         System.out.println();
+        SapXep(arr,n);
+		System.out.println("Mảng sau khi sắp xếp. ");
+        XuatMang(arr,n,sc);
+        System.out.println();
         MinIndex(arr,n);
         System.out.println();
         avg3(arr,n);
@@ -37,6 +41,17 @@ public class Bai3 {
 		}
 	}
 	
+	public static void SapXep(int arr[], int n) {
+		for (int i=0;i<n-1;i++) {
+			for (int j=i+1;j<n;j++) {
+				if (arr[i]>arr[j]) {
+					int temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+	}
 	public static void XuatMang(int arr[], int n, Scanner sc) {
 		System.out.print("Các phần tử của mảng là: ");
 		for (int i=0;i<n;i++) {
