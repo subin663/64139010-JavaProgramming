@@ -36,6 +36,7 @@ public class Bai4 {
             sc.nextLine(); // Đọc bỏ dòng trống để tránh lỗi trôi lệnh
         }
     }	
+
 	   public static void XuatMang(String sv[], double diem[], int n) {
 		   for (int i=0;i<n;i++) {
 			   System.out.print("Họ tên sinh viên thứ "+(i+1)+" là: "+sv[i]+", ");
