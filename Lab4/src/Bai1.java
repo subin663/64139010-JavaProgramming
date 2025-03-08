@@ -25,12 +25,14 @@ public class Bai1 {
 		}
 		public void setDonGia(double donGia) {
 			this.donGia = donGia;
+			
+			//
 		}
 		public double getGiamGia() {
 			return giamGia;
 		}
 		public void setGiamGia(double giamGia) {
-			this.giamGia = giamGia;
+			this.giamGia = giamGia; 
 		}
 		public double getThueNhapKhau() {
 			return (donGia*10/100);
