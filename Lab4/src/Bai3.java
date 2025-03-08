@@ -46,7 +46,7 @@ public class Bai3 {
 		public void setGiamGia(double giamGia) {
 			this.giamGia = giamGia; 
 		}
-		public double getThueNhapKhau() {
+		private double getThueNhapKhau() {
 			return (donGia*10/100);
 		}
 		public void Nhap() {
@@ -59,7 +59,8 @@ public class Bai3 {
 			setGiamGia(sc.nextDouble());
 		}
 		public void Xuat() {
-			System.out.println(getTenSP()+" có giá: "+getDonGia()+ " sau khi giảm còn: "+ ((getDonGia()-getGiamGia())));
+			double thueNhapKhau = getThueNhapKhau();
+			System.out.println(getTenSP()+" có giá: "+getDonGia()+ " sau khi giảm còn: "+ ((getDonGia()-getGiamGia()))+". Thuế: "+thueNhapKhau);
 		}
 		
 	}
